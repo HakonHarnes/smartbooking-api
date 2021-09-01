@@ -1,0 +1,16 @@
+extends baseEmail
+
+block content
+  p Hei #{firstName},
+  p Velkommen til SmartBooking! Det har blitt opprettet en konto til deg.
+  p Sett passordet ditt ved å trykke på knappen under: 
+  table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    tbody
+      tr
+        td(align='left')
+          table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+              tr
+                td
+                  a(href=`${url}`, target='_blank') Sett passord 
+  p Lenken er gyldig i 30 dager. 

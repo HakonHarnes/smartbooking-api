@@ -1,0 +1,7 @@
+extends baseEmail
+
+block content
+  p Hei #{firstName},
+  p SmartBooking-bekreftelseskoden din er: 
+  h1 #{code}
+  p Bekreftelsekoden er gyldig i 5 minutter. Dersom du ikke har bedt om denne eposten, kan du ignorere den.
